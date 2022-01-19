@@ -3,12 +3,12 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     margin-top: 50px;
 }
 
 .banner .image {
-    width: 150px;
+    min-width: 100px;
+    max-width: 150px;
 }
 
 .banner h1 {
@@ -157,5 +157,8 @@
 @media (max-width: 400px) {
     .showcase {
         grid-template-columns: 1fr;
+    }
+    .banner {
+        flex-wrap: wrap;
     }
 }
