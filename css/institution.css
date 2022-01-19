@@ -74,6 +74,70 @@ h2::after {
     color: rgb(243, 216, 62);
 }
 
+.courses {
+    margin-top: 50px;
+}
+
+.course-list dt{
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: steelblue;
+}
+
+.course-list dt::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    background: turquoise;
+}
+
+.course-list p {
+    margin-bottom: 10px;
+    margin-left: 30px;
+    color: grey;
+}
+
+.course-list p::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 10px;
+    border: 2px solid turquoise;
+}
+
+[data-anime="accordion"] dd {
+    display: none;
+}
+
+[data-anime="accordion"] dt:after {
+    content: '⬎';
+    margin-left: 10px;
+}
+
+[data-anime="accordion"] dt.active:after {
+    content: '⬏';
+}
+
+[data-anime="accordion"] dd.active {
+    display: initial;
+    animation: slideDown .5s forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 200px;
+    }
+}
+
 .depositions {
     display: grid;
     grid-template-columns: 1fr;
