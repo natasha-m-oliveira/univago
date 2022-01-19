@@ -1,0 +1,176 @@
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+h2 {
+    position: relative;
+    z-index: 1;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, .8);
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    bottom: 0;
+    left: 15px;
+    background: steelblue;
+}
+
+.about p {
+    font-size: 1rem;
+    color: gray;
+}
+
+.about p + p {
+    margin-top: 10px;
+}
+
+.about .image {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.assessments {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.assessments h2 {
+    grid-column: 1 / 3;
+}
+
+.assessments p {
+    font-size: 1.2rem;
+    color: gray;
+    width: 120px;
+}
+
+.assessments p::after {
+    content: ':';
+}
+
+.assessments .item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.assessments .item:last-child {
+    grid-column: 1 / 3;
+}
+
+.assessments .stars .icon{
+    color: rgb(243, 216, 62);
+}
+
+.depositions {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+}
+
+.depositions form {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid rgb(202, 200, 200);
+    border-radius: 10px;
+}
+
+.depositions textarea {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: 0;
+    border-radius: 10px 0 0 10px;
+    padding: 5px;
+}
+
+.depositions button {
+    background: steelblue;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+}
+
+.depositions .historic {
+    border-radius: 10px;
+    padding: 10px;
+    background: #e4e7e7;
+    margin-top: 20px;
+    max-height: 440px;
+    overflow-y: scroll;
+}
+
+.depositions .historic::-webkit-scrollbar {
+    width: 18px;
+}
+
+.depositions .historic::-webkit-scrollbar-thumb {
+    background: steelblue;
+    border-left: 4px solid #e4e7e7;
+    border-right: 4px solid #e4e7e7;
+    border-radius: 10px;
+}
+
+.depositions .item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background: white;
+}
+
+.depositions .item + .item {
+    margin-top: 10px;
+}
+
+.depositions .stars .icon {
+    font-size: 1rem;
+    color: rgb(243, 216, 62);
+}
+
+.depositions h3 {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, .8);
+    line-height: 1;
+}
+
+.depositions p {
+    font-size: 1rem;
+    color: gray;
+    line-height: 1.25;
+}
+
+@media (max-width: 700px) {
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .assessments {
+        grid-template-columns: 1fr;
+    }
+
+    .assessments h2 {
+        grid-column: 1 / 2;
+    }
+
+    .assessments .item:last-child {
+        grid-column: 1 / 2;
+    }
+}
