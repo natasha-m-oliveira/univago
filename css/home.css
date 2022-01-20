@@ -101,6 +101,7 @@
     border-radius: 10px;
     box-shadow: 0 10px 20px 0 rgb(41 51 57 / 15%), 0 3px 6px 0 rgb(41 51 57 / 10%);
 }
+
 .showcase img {
     object-fit: cover;
     height: 100px;
@@ -128,7 +129,7 @@
     padding: 0 10px;
 }
 
-.showcase .stars .icon{
+.showcase .stars .icon {
     color: rgb(243, 216, 62);
 }
 
@@ -158,6 +159,7 @@
     .showcase {
         grid-template-columns: 1fr;
     }
+
     .banner {
         flex-wrap: wrap;
     }

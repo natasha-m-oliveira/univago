@@ -53,7 +53,7 @@ h2::after {
 .assessments p {
     font-size: 1.2rem;
     color: gray;
-    width: 120px;
+    width: 150px;
 }
 
 .assessments p::after {
@@ -94,13 +94,14 @@ h2::after {
     background: turquoise;
 }
 
-.course-list p {
+.course-list a {
     margin-bottom: 10px;
     margin-left: 30px;
     color: grey;
+    display: block;
 }
 
-.course-list p::before {
+.course-list a::before {
     content: '';
     display: inline-block;
     width: 8px;

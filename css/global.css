@@ -85,6 +85,19 @@ img {
 
 }
 
+.breadcrumb {
+    margin-top: 10px;
+}
+
+.breadcrumb p {
+    font-size: .8rem;
+    color: gray;
+}
+
+.breadcrumb a {
+    color: steelblue;
+}
+
 .footer {
     grid-area: footer;
     display: flex;
